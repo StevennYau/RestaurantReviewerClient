@@ -1,3 +1,4 @@
+import { BusinessService } from './services/business.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,7 +17,7 @@ import { UserComponent } from './user/user.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BusinessService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
