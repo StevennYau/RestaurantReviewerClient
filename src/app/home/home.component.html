@@ -1,1 +1,23 @@
-<p>home works!</p>
+<div class="content" style="margin-left:10px;">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid" fxLayoutAlign="start stretch">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let business of businesses">
+      <mat-card class="mat-elevation-z4" >
+        <mat-card-header>
+          <mat-card-title class="name">{{business.name}}</mat-card-title>
+        </mat-card-header>
+        <img class="image" mat-card-image src="{{business.image_url}}">
+        <mat-card-content>
+          <p>
+            {{business.phone}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+

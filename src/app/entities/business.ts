@@ -9,4 +9,4 @@ export interface Business {
    rating: number;
    review_count: number;
    url: string;
-} // this is the type of data that is gonna be returned
+}
