@@ -18,6 +18,7 @@ none
         <mat-card class="mat-elevation-z4" >
           <mat-card-header>
             <mat-card-title class="name">{{business.name}}</mat-card-title>
+            <button (click)="onSelect(business)">test</button>
           </mat-card-header>
           <img class="image" mat-card-image src="{{business.image_url}}">
           <mat-card-content>

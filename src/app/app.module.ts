@@ -20,13 +20,18 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ResultsComponent } from './results/results.component';
+
+import { routingComponents } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserComponent,
-    SearchComponent
+    // SearchComponent,
+    // ResultsComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [BusinessService],
   bootstrap: [AppComponent]

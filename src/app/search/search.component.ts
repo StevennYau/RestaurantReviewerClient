@@ -3,6 +3,11 @@ import {Search} from '../entities/search';
 import {BusinessService} from '../services/business.service';
 import {Business} from '../entities/business';
 import {HttpErrorResponse} from '@angular/common/http';
+// @ts-ignore
+import { Router } from '@angular/router';
+import { Observable} from 'rxjs';
+import { switchMap} from 'rxjs/operators';
+import { ParamMap} from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -12,17 +17,21 @@ import {HttpErrorResponse} from '@angular/common/http';
 export class SearchComponent implements OnInit {
 
   public businesses !: Business[];
-  result: string | undefined;
-  counter: number | undefined;
+  public result: string | undefined;
+  public name: string | undefined;
 
-  constructor(private businessService: BusinessService) {
+
+  constructor(private businessService: BusinessService, private router: Router) {
   }
 
 
   ngOnInit(): void {
-    this.counter = 0;
+    this.name = 'steven';
   }
 
+  onSelect = (business: Business) => {
+    this.router.navigate(['/results'], { queryParams: { id: business.id}});
+  }
 
   submit = (result: string) => {
     console.warn(result);
@@ -41,7 +50,8 @@ export class SearchComponent implements OnInit {
         console.log(error.message);
       }
     );
-
   }
+
+
 
 }
