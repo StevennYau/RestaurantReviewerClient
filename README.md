@@ -1,6 +1,6 @@
 # Restaurant Reviewer
 
-"Restaurant Reviewer" is a Angular and Spring Boot project that allows users to rate and save restaurants in the Toronto/Markham Area. The restaurant data is taken from the Yelp API and stored in a MySQL database. The frontend uses Angular Material to create a slick and responsive user interface. Google maps is used to show the location in each restaurant's detail page.
+"Restaurant Reviewer" is a web application that allows users to browse, rate and save restaurants in the Toronto/Markham Area. This project's frontend uses Angular and Angular Material which creates a slick and responsive user interface. In addition, Google maps is used to show the location in each restaurant's detail page. User and restaurant data is saved into a MySQL database. Restaurant data is taken from the Yelp web API.
 
 ## Dependancies
 The dependencies used in this project and that should be installed are:
