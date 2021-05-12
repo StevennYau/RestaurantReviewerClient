@@ -2,7 +2,7 @@
 
 "Restaurant Reviewer" is a web application that allows users to browse, rate and save restaurants in the Toronto/Markham Area. This project's frontend uses Angular and Angular Material which creates a slick and responsive user interface. In addition, Google maps is used to show the location in each restaurant's detail page. User and restaurant data is saved into a MySQL database. Restaurant data is taken from the Yelp web API.
 
-## Dependancies
+## Frontend Dependancies
 The dependencies used in this project and that should be installed are:
 ```
 "@angular/animations": "^11.2.3",
@@ -27,3 +27,21 @@ The dependencies used in this project and that should be installed are:
 "tslib": "^2.0.0",
 "zone.js": "~0.11.3"
 ```
+
+## Database Models
+### Business
+```
+public class Business {
+    @Id
+    @GeneratedValue
+    private int id;
+    private String alias;
+    private String name;
+    private String image_url;
+    private boolean is_closed;
+    private String url;
+    private int review_count;
+    private int rating;
+    private String phone;
+    private int address_id;
+}
