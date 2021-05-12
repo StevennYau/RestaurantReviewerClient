@@ -86,7 +86,7 @@ The dependencies used in this project and that should be installed are:
 ```
 
 ## Backend Dependancies
-```java
+```xml
 <dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
