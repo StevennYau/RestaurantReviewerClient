@@ -46,6 +46,7 @@ public class Business {
     private int address_id;
 }
 ```
+### User
 ```java
 public class User{
     @Id
