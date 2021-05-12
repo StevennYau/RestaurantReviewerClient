@@ -30,7 +30,7 @@ The dependencies used in this project and that should be installed are:
 
 ## Database Models
 ### Business
-```
+```java
 public class Business {
     @Id
     @GeneratedValue
