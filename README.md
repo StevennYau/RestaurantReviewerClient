@@ -1,27 +1,29 @@
-# RestaurantReviewerClient
+# Restaurant Reviewer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+"Restaurant Reviewer" is a Angular and Spring Boot project that allows users to rate and save restaurants in the Toronto/Markham Area. The restaurant data is taken from the Yelp API and stored in a MySQL database. The frontend uses Angular Material to create a slick and responsive user interface. Google maps is used to show the location in each restaurant's detail page.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Dependancies
+The dependencies used in this project and that should be installed are:
+```
+"@angular/animations": "^11.2.3",
+"@angular/cdk": "^11.2.2",
+"@angular/common": "~11.2.1",
+"@angular/compiler": "~11.2.1",
+"@angular/core": "~11.2.1",
+"@angular/flex-layout": "^11.0.0-beta.33",
+"@angular/forms": "~11.2.1",
+"@angular/material": "^11.2.2",
+"@angular/platform-browser": "~11.2.1",
+"@angular/platform-browser-dynamic": "~11.2.1",
+"@angular/router": "~11.2.1",
+"@fortawesome/fontawesome-free": "^5.15.2",
+"@types/chart.js": "^2.9.31",
+"@types/googlemaps": "^3.39.13",
+"angular-bootstrap-md": "^11.0.0",
+"animate.css": "^4.1.1",
+"chart.js": "^2.5.0",
+"hammerjs": "^2.0.8",
+"rxjs": "~6.6.0",
+"tslib": "^2.0.0",
+"zone.js": "~0.11.3"
+```
