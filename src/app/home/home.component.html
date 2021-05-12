@@ -1,23 +1,47 @@
-<div class="content" style="margin-left:10px;">
-  <div fxLayout="row wrap" fxLayoutGap="16px grid" fxLayoutAlign="start stretch">
-    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let business of businesses">
-      <mat-card class="mat-elevation-z4" >
-        <mat-card-header>
-          <mat-card-title class="name">{{business.name}}</mat-card-title>
-        </mat-card-header>
-        <img class="image" mat-card-image src="{{business.image_url}}">
-        <mat-card-content>
-          <p>
-            {{business.phone}}
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  <div class="content" style="margin-left:10px;">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid" fxLayoutAlign="start stretch">
+      <div fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let business of businesses">
+        <mat-card class="mat-elevation-z4">
+          <mat-card-header>
+            <mat-card-title class="name">{{business.name}}</mat-card-title>
+          </mat-card-header>
+          <div>
+          <mat-divider></mat-divider>
+          <img class="image" mat-card-image src="{{business.image_url}}">
+          <mat-divider></mat-divider>
+          </div>
+          <br />
+          <mat-card-content>
+            <p>Phone: {{business.phone}}</p>
+            <p>Rating: {{business.rating}}</p>
+          </mat-card-content>
+
+          <mat-card-actions>
+            <button mat-button (click)="onSelect(business)">INFO</button>
+            <button mat-button (click)="openModal(business)">RATE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
   </div>
+</mat-grid-list>
+
+<div *ngIf="info.token; else loggedOut">
+  <h5 class="text-primary">Your Information</h5>
+  <p>
+    <strong>Username:</strong> {{info.username}}<br/>
+    <strong>Roles:</strong> {{info.authorities}}<br />
+    <strong>Token:</strong> {{info.token}}.
+  </p>
+  <button class="btn btn-secondary" (click)="logout()">Logout</button>
 </div>
+
+<ng-template #loggedOut>
+  Please login.
+</ng-template>
+
+
 
 

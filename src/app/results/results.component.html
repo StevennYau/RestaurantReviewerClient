@@ -1,1 +1,31 @@
-<div>id is {{businessId}}</div>
+<div *ngIf="business != null && businessAddress != null">
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+
+  <p>id is {{businessId}}</p>
+  <h1>BUSINESS INFO:</h1>
+  <ul>
+    <li>name: {{business.name}}</li>
+    <li>address: {{business.address_id}}</li>
+    <li>alias: {{business.alias}}</li>
+    <li>image: {{business.image_url}}</li>
+    <li>phone: {{business.phone}}</li>
+    <li>rating: {{business.rating}}</li>
+    <li>review count: {{business.review_count}}</li>
+    <li>url: {{business.url}}</li>
+  </ul>
+  <h1>ADDRESS INFO:</h1>
+  <ul>
+    <li>latitude: {{businessAddress.latitude}}</li>
+    <li>longitude: {{businessAddress.longitude}}</li>
+    <li>address1: {{businessAddress.address1}}</li>
+    <li>address2: {{businessAddress.address2}}</li>
+    <li>address3: {{businessAddress.address3}}</li>
+    <li>city: {{businessAddress.city}}</li>
+    <li>zip_code: {{businessAddress.zip_code}}</li>
+    <li>country: {{businessAddress.country}}</li>
+    <li>state: {{businessAddress.state}}</li>
+  </ul>
+
+</div>
