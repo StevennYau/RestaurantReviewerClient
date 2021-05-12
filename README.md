@@ -61,7 +61,7 @@ public class User{
 
 ## Frontend Dependencies
 The dependencies used in this project and that should be installed are:
-```
+```javascript
 "@angular/animations": "^11.2.3",
 "@angular/cdk": "^11.2.2",
 "@angular/common": "~11.2.1",
