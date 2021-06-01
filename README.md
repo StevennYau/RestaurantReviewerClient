@@ -1,6 +1,6 @@
 # Restaurant Reviewer
 
-"Restaurant Reviewer" is a web application that allows users to browse, rate and save restaurants in the Toronto/Markham Area. This project's frontend uses Angular and Angular Material which creates a slick and responsive user interface. In addition, Google maps is used to show the location in each restaurant's detail page. User and restaurant data is saved into a MySQL database. Restaurant data is taken from the Yelp web API.
+"Restaurant Reviewer" is a web application that allows users to browse, rate and save restaurants in the Toronto/Markham Area. This project's frontend uses Angular and Angular Material which creates a slick and responsive user interface. In addition, Google Maps is used to show the location in each restaurant's detail page. User and restaurant data is saved into a MySQL database. Restaurant data is taken from the Yelp web API.
 
 ## Technology Stack
 * Angular
